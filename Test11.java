@@ -20,6 +20,7 @@ public class Test11 {
         int num=1;
         for(int i=1;i<chs.length;i++){
             if(chs[i]!=chs[i-1]){
+                //此时res表示上一次的存储的字符串的值
                 res=concat(res,String.valueOf(num),String.valueOf(chs[i]));
                 num=1;
             }else{
